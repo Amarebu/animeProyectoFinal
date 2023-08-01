@@ -1,4 +1,4 @@
-# recetasProyectoFinal
+# animeProyectoFinal
 Este proyecto está creado desde cero para aprender la creación de una aplicación.
 
 Arquitectura:
@@ -9,3 +9,7 @@ Patrones de diseño usados:
 
 
 Funcionalidades añadidas:
+
+
+Llamadas a APIs usada: 
+- GET https://api.jikan.moe/v4/top/anime
