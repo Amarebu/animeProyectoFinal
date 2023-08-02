@@ -17,6 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: scene)
         
         let viewController = LoginViewController(nibName: "LoginView", bundle: nil)
+        viewController.loginViewModel
         let navigationController = UINavigationController(rootViewController: viewController)
         navigationController.navigationBar.isHidden = true
     

@@ -9,7 +9,7 @@ Patrones de diseño usados:
 
 
 Funcionalidades añadidas:
-
+- Login
 
 Llamadas a APIs usada: 
 - GET https://api.jikan.moe/v4/top/anime

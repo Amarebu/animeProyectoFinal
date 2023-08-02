@@ -9,7 +9,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="animeApp" customModuleProvider="target">
             <connections>
-                <outlet property="view" destination="iN0-l3-epB" id="QJn-37-m6N"/>
+                <outlet property="loginButton" destination="IQy-CB-edD" id="Qz7-Hl-Urw"/>
+                <outlet property="passwordImage" destination="JUj-NN-z0p" id="Ju4-uJ-p4F"/>
+                <outlet property="passwordTextField" destination="suO-wB-YZj" id="1gq-iq-jKM"/>
+                <outlet property="personImage" destination="KeX-eh-PVO" id="fyV-rD-dvT"/>
+                <outlet property="usermailTextField" destination="923-ns-iqK" id="8lA-eo-Sar"/>
+                <outlet property="view" destination="iN0-l3-epB" id="etc-CM-dso"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -27,7 +32,7 @@
                                 <constraint firstAttribute="width" constant="40" id="zyA-cg-zYn"/>
                             </constraints>
                         </imageView>
-                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usermail" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="923-ns-iqK">
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usermail" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="923-ns-iqK" userLabel="UsermailTextField">
                             <rect key="frame" x="50" y="0.0" width="272" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="272" id="Gdo-Hk-01H"/>
@@ -48,7 +53,7 @@
                                 <constraint firstAttribute="width" constant="40" id="5s1-F7-U2g"/>
                             </constraints>
                         </imageView>
-                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="suO-wB-YZj" userLabel="Password">
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="suO-wB-YZj" userLabel="PasswordTextField">
                             <rect key="frame" x="50" y="0.0" width="272" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="ZBu-Tb-YUc"/>
@@ -59,7 +64,7 @@
                         </textField>
                     </subviews>
                 </stackView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQy-CB-edD">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQy-CB-edD" userLabel="LoginButton">
                     <rect key="frame" x="127.66666666666669" y="474" width="138" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="6eX-Mw-Qj5"/>
@@ -71,6 +76,9 @@
                     <buttonConfiguration key="configuration" style="filled" title="Button">
                         <color key="baseBackgroundColor" red="0.78034855960000005" green="0.40574833179999997" blue="0.75466051789999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="onLogin:" destination="-1" eventType="touchUpInside" id="Nma-CR-JF2"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
