@@ -11,24 +11,23 @@ final class LoginViewModel {
     
     // MARK: vars
     private weak var loginView: LoginViewController?
-    private var remoteData: TopAnimeRemoteDataSourceImpl = TopAnimeRemoteDataSourceImpl()
+    private var repositoryteData: getTopAnimesRepositoryProtocol
     
     //MARK: Initializer
-    init(loginView: LoginViewController?) {
+    init(loginView: LoginViewController?, repositoryteData: getTopAnimesRepositoryProtocol) {
         self.loginView = loginView
+        self.repositoryteData = repositoryteData
     }
     
     func login(user: String, pasword: String) {
-        Task {
-            try await self.remoteData.getTopAnime()
-        }
+        
         DispatchQueue.main.async {
             if user.isEmpty {
                 self.loginView?.showAlert(alert: "The password can´t be empty")
-                print("hola")
-            }
-            if pasword.isEmpty {
+            } else if pasword.isEmpty {
                 self.loginView?.showAlert(alert: "The password can´t be empty")
+            } else {
+                self.loginView?.navigateToHome()
             }
             
         }

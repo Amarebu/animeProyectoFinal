@@ -7,222 +7,176 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B49077F8-27E8-44FC-B1B7-5FC858DEDDE7"
+            uuid = "457DE919-DD46-4F36-93AA-5A937703FC17"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "animeApp/Data/Remote/TopAnimeRemoteDataSourceImpl.swift"
+            filePath = "animeApp/Presentation/Views/Home/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1E4F3A54-59F0-4D28-977B-7222CFF7612C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "animeApp/Presentation/Views/Home/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "collectionView(_:numberOfItemsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C09A7B82-93BC-4238-8C60-CA5AFB4FCFFE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "animeApp/Presentation/Views/Home/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C09A7B82-93BC-4238-8C60-CA5AFB4FCFFE - d475dea84d4e3782"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "animeApp.HomeViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "animeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/n169931/Library/CloudStorage/OneDrive-SantanderOffice365/Escritorio/Formacion/proyectoFinal/animeProyectoFinal/animeApp/animeApp/Presentation/Views/Home/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "C09A7B82-93BC-4238-8C60-CA5AFB4FCFFE - d475dea84d4e372d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "animeApp.HomeViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "animeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/n169931/Library/CloudStorage/OneDrive-SantanderOffice365/Escritorio/Formacion/proyectoFinal/animeProyectoFinal/animeApp/animeApp/Presentation/Views/Home/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "77E7843A-23F5-408A-A6FE-A5465E00CFFE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "animeApp/Presentation/Views/Login/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "navigateToHome()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "77E7843A-23F5-408A-A6FE-A5465E00CFFE - ccd6f5413bd5d09d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "animeApp.LoginViewController.navigateToHome() -&gt; ()"
+                  moduleName = "animeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/n169931/Library/CloudStorage/OneDrive-SantanderOffice365/Escritorio/Formacion/proyectoFinal/animeProyectoFinal/animeApp/animeApp/Presentation/Views/Login/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "77E7843A-23F5-408A-A6FE-A5465E00CFFE - ccd6f5413bd5d09d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "animeApp.LoginViewController.navigateToHome() -&gt; ()"
+                  moduleName = "animeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/n169931/Library/CloudStorage/OneDrive-SantanderOffice365/Escritorio/Formacion/proyectoFinal/animeProyectoFinal/animeApp/animeApp/Presentation/Views/Login/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "77E7843A-23F5-408A-A6FE-A5465E00CFFE - ccd6f5413bd5d09d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "animeApp.LoginViewController.navigateToHome() -&gt; ()"
+                  moduleName = "animeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/n169931/Library/CloudStorage/OneDrive-SantanderOffice365/Escritorio/Formacion/proyectoFinal/animeProyectoFinal/animeApp/animeApp/Presentation/Views/Login/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6501F8B8-2301-4069-8325-A568C6350D30"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "animeApp/Presentation/Views/Home/AnimeTopCell/HomeCollectionViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "HomeCollectionViewCell"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C051C72B-5E0B-4C62-B9BE-48B094BB14A8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "animeApp/Presentation/Views/Home/AnimeTopCell/HomeCollectionViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
             endingLineNumber = "16"
-            landmarkName = "getTopAnime()"
-            landmarkType = "9">
-            <Locations>
-               <Location
-                  uuid = "B49077F8-27E8-44FC-B1B7-5FC858DEDDE7 - fe0990ec624ce36c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for animeApp.TopAnimeRemoteDataSourceImpl.getTopAnime() async throws -&gt; animeApp.TopAnime"
-                  moduleName = "animeApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/n169931/Library/CloudStorage/OneDrive-SantanderOffice365/Escritorio/Formacion/proyectoFinal/animeProyectoFinal/animeApp/animeApp/Data/Remote/TopAnimeRemoteDataSourceImpl.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "92">
-               </Location>
-               <Location
-                  uuid = "B49077F8-27E8-44FC-B1B7-5FC858DEDDE7 - fe0990ec624ce36c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for animeApp.TopAnimeRemoteDataSourceImpl.getTopAnime() async throws -&gt; animeApp.TopAnime"
-                  moduleName = "animeApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/n169931/Library/CloudStorage/OneDrive-SantanderOffice365/Escritorio/Formacion/proyectoFinal/animeProyectoFinal/animeApp/animeApp/Data/Remote/TopAnimeRemoteDataSourceImpl.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "180">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D014A442-660C-4B08-9D79-10FFF4AF580E"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "animeApp/Data/Remote/TopAnimeRemoteDataSourceImpl.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "getTopAnime()"
-            landmarkType = "9">
-            <Locations>
-               <Location
-                  uuid = "D014A442-660C-4B08-9D79-10FFF4AF580E - fe0990ec624ce3cb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for animeApp.TopAnimeRemoteDataSourceImpl.getTopAnime() async throws -&gt; animeApp.TopAnime"
-                  moduleName = "animeApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/n169931/Library/CloudStorage/OneDrive-SantanderOffice365/Escritorio/Formacion/proyectoFinal/animeProyectoFinal/animeApp/animeApp/Data/Remote/TopAnimeRemoteDataSourceImpl.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "196">
-               </Location>
-               <Location
-                  uuid = "D014A442-660C-4B08-9D79-10FFF4AF580E - f2208b62fb8d5c25"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for animeApp.TopAnimeRemoteDataSourceImpl.getTopAnime() async throws -&gt; animeApp.TopAnime"
-                  moduleName = "animeApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/n169931/Library/CloudStorage/OneDrive-SantanderOffice365/Escritorio/Formacion/proyectoFinal/animeProyectoFinal/animeApp/animeApp/Data/Remote/TopAnimeRemoteDataSourceImpl.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "40">
-               </Location>
-               <Location
-                  uuid = "D014A442-660C-4B08-9D79-10FFF4AF580E - 12fbcd08d8665fc5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for animeApp.TopAnimeRemoteDataSourceImpl.getTopAnime() async throws -&gt; animeApp.TopAnime"
-                  moduleName = "animeApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/n169931/Library/CloudStorage/OneDrive-SantanderOffice365/Escritorio/Formacion/proyectoFinal/animeProyectoFinal/animeApp/animeApp/Data/Remote/TopAnimeRemoteDataSourceImpl.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "60">
-               </Location>
-               <Location
-                  uuid = "D014A442-660C-4B08-9D79-10FFF4AF580E - dcb2d7790d0afdc4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for animeApp.TopAnimeRemoteDataSourceImpl.getTopAnime() async throws -&gt; animeApp.TopAnime"
-                  moduleName = "animeApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/n169931/Library/CloudStorage/OneDrive-SantanderOffice365/Escritorio/Formacion/proyectoFinal/animeProyectoFinal/animeApp/animeApp/Data/Remote/TopAnimeRemoteDataSourceImpl.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "28">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0CD89D76-4D51-47C0-8979-DA78CD1404B6"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "animeApp/Data/Remote/TopAnimeRemoteDataSourceImpl.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "getTopAnime()"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "4745C33F-BDB4-4E82-A3B0-4C4811300E45"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "animeApp/Data/Remote/TopAnimeRemoteDataSourceImpl.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "getTopAnime()"
-            landmarkType = "9">
-            <Locations>
-               <Location
-                  uuid = "4745C33F-BDB4-4E82-A3B0-4C4811300E45 - 12fbcd08d866585a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for animeApp.TopAnimeRemoteDataSourceImpl.getTopAnime() async throws -&gt; animeApp.TopAnime"
-                  moduleName = "animeApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/n169931/Library/CloudStorage/OneDrive-SantanderOffice365/Escritorio/Formacion/proyectoFinal/animeProyectoFinal/animeApp/animeApp/Data/Remote/TopAnimeRemoteDataSourceImpl.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "388">
-               </Location>
-               <Location
-                  uuid = "4745C33F-BDB4-4E82-A3B0-4C4811300E45 - c3128075039cafe7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (animeApp.Datum) -&gt; () in animeApp.TopAnimeRemoteDataSourceImpl.getTopAnime() async throws -&gt; animeApp.TopAnime"
-                  moduleName = "animeApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/n169931/Library/CloudStorage/OneDrive-SantanderOffice365/Escritorio/Formacion/proyectoFinal/animeProyectoFinal/animeApp/animeApp/Data/Remote/TopAnimeRemoteDataSourceImpl.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "56">
-               </Location>
-               <Location
-                  uuid = "4745C33F-BDB4-4E82-A3B0-4C4811300E45 - 12fbcd08d866585a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for animeApp.TopAnimeRemoteDataSourceImpl.getTopAnime() async throws -&gt; animeApp.TopAnime"
-                  moduleName = "animeApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/n169931/Library/CloudStorage/OneDrive-SantanderOffice365/Escritorio/Formacion/proyectoFinal/animeProyectoFinal/animeApp/animeApp/Data/Remote/TopAnimeRemoteDataSourceImpl.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "380">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "86F707CB-78C9-44E9-B195-2048D4CEEFA4"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "animeApp/Data/Remote/TopAnimeRemoteDataSourceImpl.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "getTopAnime()"
-            landmarkType = "9">
+            landmarkName = "HomeCollectionViewCell"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

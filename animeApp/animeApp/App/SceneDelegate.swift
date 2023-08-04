@@ -13,14 +13,25 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+//        guard let scene = (scene as? UIWindowScene) else { return }
+//        let window = UIWindow(windowScene: scene)
+//
+//        let viewController = LoginViewController(nibName: "LoginView", bundle: nil)
+//
+//        let navigationController = UINavigationController(rootViewController: viewController)
+//        navigationController.navigationBar.isHidden = true
+//
+//        window.rootViewController = navigationController
+//        window.makeKeyAndVisible()
+//
+//        self.window = window
+        
         guard let scene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: scene)
         
         let viewController = LoginViewController(nibName: "LoginView", bundle: nil)
-        viewController.loginViewModel
         let navigationController = UINavigationController(rootViewController: viewController)
-        navigationController.navigationBar.isHidden = true
-    
+        navigationController.navigationBar.isHidden = false
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
         

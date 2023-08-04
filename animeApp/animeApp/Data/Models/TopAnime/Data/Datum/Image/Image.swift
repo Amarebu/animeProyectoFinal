@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - Image
 struct Image: Codable {
-    let imageURL, smallImageURL, largeImageURL: String?
+    let imageURL, smallImageURL, largeImageURL: String
 
     enum CodingKeys: String, CodingKey {
         case imageURL = "image_url"

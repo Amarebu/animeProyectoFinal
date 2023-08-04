@@ -22,27 +22,42 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setViewModel()
+        setupUserMail()
+        setupPersonImage()
+    }
+    
+    private func setupUserMail() {
+        usermailTextField.placeholder = NSLocalizedString("usermailFormPlaceHolder", comment: "")
+        // passwordTextField.placeholder = NSLocalizedString("passwordFormPlaceHolder", comment: "")
+        // loginButton.setTitle(NSLocalizedString("loginButtonTitle", comment: ""), for: .normal)
+    }
+    
+    private func setupPersonImage() {
+        personImage.image = UIImage(systemName: "person.circle")?.withTintColor(UIColor(named: "lightPink") ?? .black)
     }
     
     private func setViewModel() {
-       // let remoteDataSource = RemoteDataSourceImpl()
-       // let repository = RepositoryImpl(remoteDataSource: remoteDataSource)
-        self.loginViewModel = LoginViewModel(loginView: self)
+        let remoteDataSource = TopAnimeRemoteDataSourceImpl()
+        let repository = getTopAnimesRepositoryImpl(topAnimeRemoteDataSource: remoteDataSource)
+        self.loginViewModel = LoginViewModel(loginView: self, repositoryteData: repository)
     }
     
     @IBAction func onLogin(_ sender: Any) {
         
         guard let provePassword = passwordTextField.text else {
-            print("hello")
             return
         }
         
         guard let proveUser = usermailTextField.text else {
-            print("helloUser")
             return
         }
         
         loginViewModel?.login(user: proveUser, pasword: provePassword)
+    }
+    
+    func navigateToHome() {
+        let homeViewController = HomeViewController(nibName: "HomeView", bundle: nil)
+        navigationController?.pushViewController(homeViewController, animated: true)
     }
     
     func showAlert(alert: String) {

@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  animeApp
+
+  Created by Reguera Bueno Ana María on 2/8/23.
+  
+*/
+"passwordFormPlaceHolder" = "Password";
+"usermailFormPlaceHolder" = "Usermail";
+"loginButtonTitle" = "Login";

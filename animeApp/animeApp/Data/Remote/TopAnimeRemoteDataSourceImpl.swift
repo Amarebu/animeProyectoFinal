@@ -13,10 +13,9 @@ final class TopAnimeRemoteDataSourceImpl: TopAnimeRemoteDataSourceProtocol {
     
     func getTopAnime() async throws -> TopAnimeDTO {
         // Get URLSession
-        guard var urlRequest = getSessionTopAnime() else {
+        guard let urlRequest = getSessionTopAnime() else {
             throw NetworkError.malformedURL // Para seguir el ejemplo del playground
         }
-        
         // Obtener la data de la llamada
         let (data,_) = try await URLSession.shared.data(for: urlRequest)
         
@@ -28,22 +27,17 @@ final class TopAnimeRemoteDataSourceImpl: TopAnimeRemoteDataSourceProtocol {
     }
   
 }
-
-
 extension TopAnimeRemoteDataSourceImpl {
     
-    func getSessionTopAnime() -> URLRequest? {
+    private func getSessionTopAnime() -> URLRequest? {
         // Get URL request:
         guard let url = URL(string: "\(server)/top/anime") else {
             print("URL Error")
             return nil
         }
-
         // URL request
         var urlRequest = URLRequest(url: url)
-        urlRequest.httpMethod = "GET" // Post -> debería ser get
-        //urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        
+        urlRequest.httpMethod = "GET"
         return urlRequest
     }
 }

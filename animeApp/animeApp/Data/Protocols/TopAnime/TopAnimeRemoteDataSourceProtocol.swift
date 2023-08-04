@@ -8,5 +8,5 @@
 import Foundation
 
 protocol TopAnimeRemoteDataSourceProtocol {
-    
+    func getTopAnime() async throws -> TopAnimeDTO
 }
