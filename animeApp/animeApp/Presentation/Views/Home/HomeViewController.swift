@@ -15,7 +15,7 @@ final class HomeViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setViewModel()
-        homeCollectionView.backgroundColor = .white
+        // homeCollectionView.backgroundColor = .white
         configureCollectionView()
         registerCells()
         homeViewModel?.getTopAnimes { [weak self] in
@@ -48,7 +48,7 @@ final class HomeViewController : UIViewController {
     }
     
     private func getItemSize() -> CGSize {
-        return CGSize(width: 150, height: 200)
+        return CGSize(width: 150, height: 280)
     }
     
     private func setViewModel() {
@@ -71,11 +71,35 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "homeCellReuseIdentifier", for: indexPath) as? HomeCollectionViewCell else {
             return UICollectionViewCell()
         }
-        cell.backgroundColor = .red
         guard let model = homeViewModel?.onNeeedTopAnimes()[indexPath.row] else {
             return UICollectionViewCell()
         }
+        
+        //cell.layer.borderWidth = 1.0
+        //cell.layer.borderColor =   CGColor(red: 0, green: 0, blue: 0, alpha: 50)
+        //cell.layer.cornerRadius = 10
+        cell.layer.addSublayer(addDashedBorder())
         cell.setUp(model: model)
+
         return cell
+    }
+    
+    private func addDashedBorder() -> CALayer {
+        let color = UIColor.black.cgColor
+        
+        let shapeLayer:CAShapeLayer = CAShapeLayer()
+        let shapeRect = CGRect(x: 0, y: 0, width: 150, height: 280)
+        
+        shapeLayer.bounds = shapeRect
+        shapeLayer.position = CGPoint(x: 150/2, y: 280/2)
+        shapeLayer.fillColor = UIColor.clear.cgColor
+        shapeLayer.strokeColor = color
+        shapeLayer.lineWidth = 2
+        shapeLayer.lineJoin = CAShapeLayerLineJoin.round
+        shapeLayer.lineDashPattern = [6,3]
+        shapeLayer.cornerRadius = 10
+        shapeLayer.path = UIBezierPath(roundedRect: shapeRect, cornerRadius: 4).cgPath
+        
+        return shapeLayer
     }
 }

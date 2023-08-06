@@ -52,6 +52,11 @@
 		107558DB2A7BC17500A9B30A /* TopAnimeDataVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107558DA2A7BC17500A9B30A /* TopAnimeDataVO.swift */; };
 		107558DF2A7BC50800A9B30A /* DemographicVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107558DE2A7BC50800A9B30A /* DemographicVO.swift */; };
 		107558E32A7C596F00A9B30A /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 107558E12A7C596F00A9B30A /* HomeCollectionViewCell.xib */; };
+		107558E62A7D12EC00A9B30A /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107558E52A7D12EC00A9B30A /* TabBarViewController.swift */; };
+		107558E82A7D137500A9B30A /* NotificationCenterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107558E72A7D137500A9B30A /* NotificationCenterExtension.swift */; };
+		107558EB2A7D248600A9B30A /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 107558EA2A7D248600A9B30A /* DetailViewController.xib */; };
+		107558ED2A7D249200A9B30A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107558EC2A7D249200A9B30A /* DetailViewController.swift */; };
+		107558F02A7D2BAE00A9B30A /* DetailVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107558EF2A7D2BAE00A9B30A /* DetailVO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +127,11 @@
 		107558DA2A7BC17500A9B30A /* TopAnimeDataVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAnimeDataVO.swift; sourceTree = "<group>"; };
 		107558DE2A7BC50800A9B30A /* DemographicVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemographicVO.swift; sourceTree = "<group>"; };
 		107558E12A7C596F00A9B30A /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		107558E52A7D12EC00A9B30A /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		107558E72A7D137500A9B30A /* NotificationCenterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterExtension.swift; sourceTree = "<group>"; };
+		107558EA2A7D248600A9B30A /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		107558EC2A7D249200A9B30A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		107558EF2A7D2BAE00A9B30A /* DetailVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +257,7 @@
 		107558592A79155300A9B30A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				107558E72A7D137500A9B30A /* NotificationCenterExtension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -517,6 +528,8 @@
 		107558A82A7A342600A9B30A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				107558DC2A7BC4F500A9B30A /* DemographicVO */,
+				107558EE2A7D2B3E00A9B30A /* DetailVO */,
 				107558D52A7BC0C000A9B30A /* TopAnimeVO */,
 			);
 			path = Models;
@@ -525,6 +538,8 @@
 		107558A92A7A343000A9B30A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				107558E92A7D23E700A9B30A /* DetailTopAnime */,
+				107558E42A7D000400A9B30A /* TabBar */,
 				107558BD2A7A843F00A9B30A /* Home */,
 				107558662A79194400A9B30A /* Login */,
 			);
@@ -614,7 +629,6 @@
 		107558D82A7BC12B00A9B30A /* TopAnimeDataVO */ = {
 			isa = PBXGroup;
 			children = (
-				107558DC2A7BC4F500A9B30A /* DemographicVO */,
 				107558DA2A7BC17500A9B30A /* TopAnimeDataVO.swift */,
 			);
 			path = TopAnimeDataVO;
@@ -626,6 +640,31 @@
 				107558DE2A7BC50800A9B30A /* DemographicVO.swift */,
 			);
 			path = DemographicVO;
+			sourceTree = "<group>";
+		};
+		107558E42A7D000400A9B30A /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				107558E52A7D12EC00A9B30A /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		107558E92A7D23E700A9B30A /* DetailTopAnime */ = {
+			isa = PBXGroup;
+			children = (
+				107558EA2A7D248600A9B30A /* DetailViewController.xib */,
+				107558EC2A7D249200A9B30A /* DetailViewController.swift */,
+			);
+			path = DetailTopAnime;
+			sourceTree = "<group>";
+		};
+		107558EE2A7D2B3E00A9B30A /* DetailVO */ = {
+			isa = PBXGroup;
+			children = (
+				107558EF2A7D2BAE00A9B30A /* DetailVO.swift */,
+			);
+			path = DetailVO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -735,6 +774,7 @@
 			files = (
 				107558322A7911F100A9B30A /* LaunchScreen.storyboard in Resources */,
 				107558D12A7AB6E300A9B30A /* Localizable.strings in Resources */,
+				107558EB2A7D248600A9B30A /* DetailViewController.xib in Resources */,
 				107558C42A7A858300A9B30A /* HomeView.xib in Resources */,
 				107558E32A7C596F00A9B30A /* HomeCollectionViewCell.xib in Resources */,
 				1075582F2A7911F100A9B30A /* Assets.xcassets in Resources */,
@@ -763,16 +803,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				107558ED2A7D249200A9B30A /* DetailViewController.swift in Sources */,
 				107558B62A7A4E5900A9B30A /* DemographicDO.swift in Sources */,
+				107558E82A7D137500A9B30A /* NotificationCenterExtension.swift in Sources */,
 				107558732A7984E000A9B30A /* TopAnimeRemoteDataSourceImpl.swift in Sources */,
 				107558DF2A7BC50800A9B30A /* DemographicVO.swift in Sources */,
 				1075586D2A79199700A9B30A /* LoginViewController.swift in Sources */,
 				107558C22A7A856F00A9B30A /* HomeViewModel.swift in Sources */,
 				107558BA2A7A5D0B00A9B30A /* getTopAnimesRepositoryProtocol.swift in Sources */,
 				107558AB2A7A349A00A9B30A /* TopAnimeDO.swift in Sources */,
+				107558F02A7D2BAE00A9B30A /* DetailVO.swift in Sources */,
 				107558A42A79B24C00A9B30A /* NetworkError.swift in Sources */,
 				1075589F2A79AA8D00A9B30A /* Title.swift in Sources */,
 				1075586F2A7930A300A9B30A /* KeyChainHelper.swift in Sources */,
+				107558E62A7D12EC00A9B30A /* TabBarViewController.swift in Sources */,
 				107558262A7911F000A9B30A /* AppDelegate.swift in Sources */,
 				107558A22A79AAA100A9B30A /* Trailer.swift in Sources */,
 				107558B12A7A371500A9B30A /* DatumDO.swift in Sources */,

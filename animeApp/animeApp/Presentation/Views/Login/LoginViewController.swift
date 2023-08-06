@@ -57,7 +57,8 @@ class LoginViewController: UIViewController {
     
     func navigateToHome() {
         let homeViewController = HomeViewController(nibName: "HomeView", bundle: nil)
-        navigationController?.pushViewController(homeViewController, animated: true)
+        let tabBarViewController = TabBarViewController()
+        navigationController?.pushViewController(tabBarViewController, animated: true)
     }
     
     func showAlert(alert: String) {
