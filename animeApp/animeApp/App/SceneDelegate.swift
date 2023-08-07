@@ -13,29 +13,30 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-//        guard let scene = (scene as? UIWindowScene) else { return }
-//        let window = UIWindow(windowScene: scene)
-//
-//        let viewController = LoginViewController(nibName: "LoginView", bundle: nil)
-//
-//        let navigationController = UINavigationController(rootViewController: viewController)
-//        navigationController.navigationBar.isHidden = true
-//
-//        window.rootViewController = navigationController
-//        window.makeKeyAndVisible()
-//
-//        self.window = window
         
-        guard let scene = (scene as? UIWindowScene) else { return }
-        let window = UIWindow(windowScene: scene)
-        
-        let viewController = LoginViewController(nibName: "LoginView", bundle: nil)
-        let navigationController = UINavigationController(rootViewController: viewController)
-        navigationController.navigationBar.isHidden = false
-        window.rootViewController = navigationController
-        window.makeKeyAndVisible()
-        
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        let window = UIWindow(windowScene: windowScene)
         self.window = window
+        
+        
+        let rootViewModel = RootViewModel()
+        let navigationController = UINavigationController(rootViewController: LoginViewController(rootViewModel: rootViewModel))
+        
+        rootViewModel.onViewChange = {
+            switch rootViewModel.activeView {
+            case .login: // -> registro, olvidado tu contraseña... (push view controller)
+                window.rootViewController = UINavigationController(rootViewController: LoginViewController(rootViewModel: rootViewModel))
+            case .home:
+                window.rootViewController = UINavigationController(rootViewController: TabBarViewController(rootViewModel: rootViewModel))
+            case .detail(model: let model):
+                window.rootViewController = UINavigationController(rootViewController: DetailViewController(rootViewModel: rootViewModel, model: model))
+            }
+        }
+        
+        window.rootViewController = navigationController
+        window.rootViewController?.navigationController?.navigationBar.isHidden = false
+        window.rootViewController?.navigationController?.navigationBar.backgroundColor = .blue
+        window.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

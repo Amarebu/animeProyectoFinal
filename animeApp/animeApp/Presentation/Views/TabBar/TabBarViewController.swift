@@ -9,9 +9,22 @@ import UIKit
 
 final class TabBarViewController: UITabBarController {
     
+    var rootViewModel: RootViewModel
+    
+    // MARK: - Lifecycle
+    init(rootViewModel: RootViewModel) {
+        self.rootViewModel = rootViewModel
+        super.init(nibName: "TabBarViewController", bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         // homeView
-        let homeViewController = HomeViewController(nibName: "HomeView", bundle: nil)
+        //let homeViewController = HomeViewController(nibName: "HomeView", bundle: nil, rootViewModel: rootViewModel)
+        let homeViewController = HomeViewController(rootViewModel: rootViewModel)
         homeViewController.tabBarItem = UITabBarItem(title: "Top Animes", image: UIImage(named: "Top Animes"), tag: 0)
         
         // Settings

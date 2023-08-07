@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol getTopAnimesRepositoryProtocol {
+protocol GetTopAnimesRepositoryProtocol {
     func getTopAnimes() async throws -> TopAnimeDO
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class getTopAnimesRepositoryImpl: getTopAnimesRepositoryProtocol {
+final class GetTopAnimesRepositoryImpl: GetTopAnimesRepositoryProtocol {
     
     // MARK: - Properties
     private let topAnimeRemoteDataSource: TopAnimeRemoteDataSourceProtocol
@@ -25,6 +25,7 @@ final class getTopAnimesRepositoryImpl: getTopAnimesRepositoryProtocol {
         }
         return topAnimes.mapToDO()
     }
+    
 }
 
 

@@ -16,8 +16,18 @@ class LoginViewController: UIViewController {
     
     // MARK: - ViewModel
     var loginViewModel: LoginViewModel?
+    var rootViewModel: RootViewModel
     
-
+    // MARK: - Lifecycle
+    init(rootViewModel: RootViewModel) {
+        self.rootViewModel = rootViewModel
+        super.init(nibName: "LoginView", bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     // MARK: - View controller lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +48,7 @@ class LoginViewController: UIViewController {
     
     private func setViewModel() {
         let remoteDataSource = TopAnimeRemoteDataSourceImpl()
-        let repository = getTopAnimesRepositoryImpl(topAnimeRemoteDataSource: remoteDataSource)
+        let repository = GetTopAnimesRepositoryImpl(topAnimeRemoteDataSource: remoteDataSource)
         self.loginViewModel = LoginViewModel(loginView: self, repositoryteData: repository)
     }
     
@@ -56,9 +66,11 @@ class LoginViewController: UIViewController {
     }
     
     func navigateToHome() {
-        let homeViewController = HomeViewController(nibName: "HomeView", bundle: nil)
+        /*let homeViewController = HomeViewController(nibName: "HomeView", bundle: nil)
         let tabBarViewController = TabBarViewController()
         navigationController?.pushViewController(tabBarViewController, animated: true)
+         */
+        rootViewModel.activeView = .home
     }
     
     func showAlert(alert: String) {

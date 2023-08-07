@@ -27,9 +27,18 @@ extension TopAnimeDO {
                                                  type: demo.type,
                                                  name: demo.name))
             }
-            dataVO.append(TopAnimeDataVO(image: data.images,
+            dataVO.append(TopAnimeDataVO(malID: data.malID,
+                                         image: data.images,
                                          year: data.year,
                                          titleEnglish: data.titleEnglish,
+                                         url: data.url,
+                                         episodes: data.episodes,
+                                         status: data.status,
+                                         airing: data.airing,
+                                         duration: data.duration,
+                                         score: data.score,
+                                         synopsis: data.synopsis,
+                                         season: data.season,
                                          genre: demographVO))
         }
         

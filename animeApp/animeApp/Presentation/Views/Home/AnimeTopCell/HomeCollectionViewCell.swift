@@ -9,11 +9,10 @@ import UIKit
 
 final class HomeCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var detailButton: UIButton!
-    @IBOutlet weak var animeImage: UIImageView!
-    @IBOutlet weak var animeGenreLabel: UILabel!
-    @IBOutlet weak var animeYearLabel: UILabel!
-    @IBOutlet weak var animeTitleLabel: UILabel!
+    @IBOutlet private weak var animeImage: UIImageView!
+    @IBOutlet private weak var animeGenreLabel: UILabel!
+    @IBOutlet private weak var animeYearLabel: UILabel!
+    @IBOutlet private weak var animeTitleLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,9 +21,6 @@ final class HomeCollectionViewCell: UICollectionViewCell {
         configureTitle()
         configureGenre()
         configureYear()
-        configuraButton()
-    }
-    @IBAction func viewDetail(_ sender: Any) {
     }
     
     private func configureImage() {
@@ -45,18 +41,13 @@ final class HomeCollectionViewCell: UICollectionViewCell {
         animeYearLabel.textAlignment = .right
     }
     
-    private func configuraButton() {
-        detailButton.layer.cornerRadius = 5
-        detailButton.tintColor = .white
-        detailButton.backgroundColor =  UIColor(named: "lightPink")
-        detailButton.setTitle("Detail", for: .normal)
-    }
-    
     func setUp(model: TopAnimeDataVO) {
-        let unwrap = model.image ?? ""
-        let url = URL(string: unwrap)!
-        if let data = try? Data(contentsOf: url) {
-                animeImage.image = UIImage(data: data)
+        DispatchQueue.main.async { [weak self] in
+            let unwrap = model.image ?? ""
+            let url = URL(string: unwrap)!
+            if let data = try? Data(contentsOf: url) {
+                self?.animeImage.image = UIImage(data: data)
+            }
         }
         animeYearLabel.text = String(model.year ?? 0)
         animeGenreLabel.text = model.genre?.first?.name

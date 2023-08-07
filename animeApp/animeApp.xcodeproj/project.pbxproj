@@ -21,9 +21,6 @@
 		107558712A7930F200A9B30A /* UserDefaultHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107558702A7930F200A9B30A /* UserDefaultHelper.swift */; };
 		107558732A7984E000A9B30A /* TopAnimeRemoteDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107558722A7984E000A9B30A /* TopAnimeRemoteDataSourceImpl.swift */; };
 		107558762A79850900A9B30A /* TopAnimeRemoteDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107558752A79850900A9B30A /* TopAnimeRemoteDataSourceProtocol.swift */; };
-		107558782A79877D00A9B30A /* DTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107558772A79877D00A9B30A /* DTO.swift */; };
-		1075587A2A79878700A9B30A /* DO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107558792A79878700A9B30A /* DO.swift */; };
-		1075587C2A79878F00A9B30A /* VO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1075587B2A79878F00A9B30A /* VO.swift */; };
 		1075587F2A798B6E00A9B30A /* TopAnimeDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1075587E2A798B6E00A9B30A /* TopAnimeDTO.swift */; };
 		107558842A798BFA00A9B30A /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107558832A798BFA00A9B30A /* Pagination.swift */; };
 		107558872A798C6C00A9B30A /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107558862A798C6C00A9B30A /* Items.swift */; };
@@ -41,8 +38,8 @@
 		107558AF2A7A36B700A9B30A /* PaginationDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107558AE2A7A36B700A9B30A /* PaginationDO.swift */; };
 		107558B12A7A371500A9B30A /* DatumDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107558B02A7A371500A9B30A /* DatumDO.swift */; };
 		107558B62A7A4E5900A9B30A /* DemographicDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107558B52A7A4E5900A9B30A /* DemographicDO.swift */; };
-		107558B82A7A5CCB00A9B30A /* getTopAnimesRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107558B72A7A5CCB00A9B30A /* getTopAnimesRepositoryImpl.swift */; };
-		107558BA2A7A5D0B00A9B30A /* getTopAnimesRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107558B92A7A5D0B00A9B30A /* getTopAnimesRepositoryProtocol.swift */; };
+		107558B82A7A5CCB00A9B30A /* GetTopAnimesRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107558B72A7A5CCB00A9B30A /* GetTopAnimesRepositoryImpl.swift */; };
+		107558BA2A7A5D0B00A9B30A /* GetTopAnimesRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107558B92A7A5D0B00A9B30A /* GetTopAnimesRepositoryProtocol.swift */; };
 		107558C02A7A856800A9B30A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107558BF2A7A856800A9B30A /* HomeViewController.swift */; };
 		107558C22A7A856F00A9B30A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107558C12A7A856F00A9B30A /* HomeViewModel.swift */; };
 		107558C42A7A858300A9B30A /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 107558C32A7A858300A9B30A /* HomeView.xib */; };
@@ -56,7 +53,8 @@
 		107558E82A7D137500A9B30A /* NotificationCenterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107558E72A7D137500A9B30A /* NotificationCenterExtension.swift */; };
 		107558EB2A7D248600A9B30A /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 107558EA2A7D248600A9B30A /* DetailViewController.xib */; };
 		107558ED2A7D249200A9B30A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107558EC2A7D249200A9B30A /* DetailViewController.swift */; };
-		107558F02A7D2BAE00A9B30A /* DetailVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107558EF2A7D2BAE00A9B30A /* DetailVO.swift */; };
+		107558F22A7FC6A900A9B30A /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107558F12A7FC6A900A9B30A /* DetailViewModel.swift */; };
+		107558F52A80D4BD00A9B30A /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107558F42A80D4BD00A9B30A /* RootViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,9 +93,6 @@
 		107558702A7930F200A9B30A /* UserDefaultHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultHelper.swift; sourceTree = "<group>"; };
 		107558722A7984E000A9B30A /* TopAnimeRemoteDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAnimeRemoteDataSourceImpl.swift; sourceTree = "<group>"; };
 		107558752A79850900A9B30A /* TopAnimeRemoteDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAnimeRemoteDataSourceProtocol.swift; sourceTree = "<group>"; };
-		107558772A79877D00A9B30A /* DTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTO.swift; sourceTree = "<group>"; };
-		107558792A79878700A9B30A /* DO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DO.swift; sourceTree = "<group>"; };
-		1075587B2A79878F00A9B30A /* VO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VO.swift; sourceTree = "<group>"; };
 		1075587E2A798B6E00A9B30A /* TopAnimeDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAnimeDTO.swift; sourceTree = "<group>"; };
 		107558832A798BFA00A9B30A /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
 		107558862A798C6C00A9B30A /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
@@ -115,8 +110,8 @@
 		107558AE2A7A36B700A9B30A /* PaginationDO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationDO.swift; sourceTree = "<group>"; };
 		107558B02A7A371500A9B30A /* DatumDO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatumDO.swift; sourceTree = "<group>"; };
 		107558B52A7A4E5900A9B30A /* DemographicDO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemographicDO.swift; sourceTree = "<group>"; };
-		107558B72A7A5CCB00A9B30A /* getTopAnimesRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getTopAnimesRepositoryImpl.swift; sourceTree = "<group>"; };
-		107558B92A7A5D0B00A9B30A /* getTopAnimesRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getTopAnimesRepositoryProtocol.swift; sourceTree = "<group>"; };
+		107558B72A7A5CCB00A9B30A /* GetTopAnimesRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTopAnimesRepositoryImpl.swift; sourceTree = "<group>"; };
+		107558B92A7A5D0B00A9B30A /* GetTopAnimesRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTopAnimesRepositoryProtocol.swift; sourceTree = "<group>"; };
 		107558BF2A7A856800A9B30A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		107558C12A7A856F00A9B30A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		107558C32A7A858300A9B30A /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
@@ -131,7 +126,8 @@
 		107558E72A7D137500A9B30A /* NotificationCenterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterExtension.swift; sourceTree = "<group>"; };
 		107558EA2A7D248600A9B30A /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		107558EC2A7D249200A9B30A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		107558EF2A7D2BAE00A9B30A /* DetailVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVO.swift; sourceTree = "<group>"; };
+		107558F12A7FC6A900A9B30A /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		107558F42A80D4BD00A9B30A /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,7 +223,6 @@
 				107558A72A7A33FA00A9B30A /* Protocols */,
 				107558A62A7A33D400A9B30A /* Models */,
 				107558652A7918CF00A9B30A /* Use Cases */,
-				107558792A79878700A9B30A /* DO.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -249,7 +244,6 @@
 			children = (
 				107558A82A7A342600A9B30A /* Models */,
 				107558A92A7A343000A9B30A /* Views */,
-				1075587B2A79878F00A9B30A /* VO.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -354,7 +348,7 @@
 		107558652A7918CF00A9B30A /* Use Cases */ = {
 			isa = PBXGroup;
 			children = (
-				107558B72A7A5CCB00A9B30A /* getTopAnimesRepositoryImpl.swift */,
+				107558B72A7A5CCB00A9B30A /* GetTopAnimesRepositoryImpl.swift */,
 			);
 			path = "Use Cases";
 			sourceTree = "<group>";
@@ -381,7 +375,6 @@
 			isa = PBXGroup;
 			children = (
 				107558802A798BD300A9B30A /* TopAnime */,
-				107558772A79877D00A9B30A /* DTO.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -529,7 +522,6 @@
 			isa = PBXGroup;
 			children = (
 				107558DC2A7BC4F500A9B30A /* DemographicVO */,
-				107558EE2A7D2B3E00A9B30A /* DetailVO */,
 				107558D52A7BC0C000A9B30A /* TopAnimeVO */,
 			);
 			path = Models;
@@ -538,6 +530,7 @@
 		107558A92A7A343000A9B30A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				107558F32A80D4B000A9B30A /* RootView */,
 				107558E92A7D23E700A9B30A /* DetailTopAnime */,
 				107558E42A7D000400A9B30A /* TabBar */,
 				107558BD2A7A843F00A9B30A /* Home */,
@@ -584,7 +577,7 @@
 		107558BB2A7A615700A9B30A /* TopAnime */ = {
 			isa = PBXGroup;
 			children = (
-				107558B92A7A5D0B00A9B30A /* getTopAnimesRepositoryProtocol.swift */,
+				107558B92A7A5D0B00A9B30A /* GetTopAnimesRepositoryProtocol.swift */,
 			);
 			path = TopAnime;
 			sourceTree = "<group>";
@@ -655,16 +648,17 @@
 			children = (
 				107558EA2A7D248600A9B30A /* DetailViewController.xib */,
 				107558EC2A7D249200A9B30A /* DetailViewController.swift */,
+				107558F12A7FC6A900A9B30A /* DetailViewModel.swift */,
 			);
 			path = DetailTopAnime;
 			sourceTree = "<group>";
 		};
-		107558EE2A7D2B3E00A9B30A /* DetailVO */ = {
+		107558F32A80D4B000A9B30A /* RootView */ = {
 			isa = PBXGroup;
 			children = (
-				107558EF2A7D2BAE00A9B30A /* DetailVO.swift */,
+				107558F42A80D4BD00A9B30A /* RootViewModel.swift */,
 			);
-			path = DetailVO;
+			path = RootView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -807,12 +801,12 @@
 				107558B62A7A4E5900A9B30A /* DemographicDO.swift in Sources */,
 				107558E82A7D137500A9B30A /* NotificationCenterExtension.swift in Sources */,
 				107558732A7984E000A9B30A /* TopAnimeRemoteDataSourceImpl.swift in Sources */,
+				107558F52A80D4BD00A9B30A /* RootViewModel.swift in Sources */,
 				107558DF2A7BC50800A9B30A /* DemographicVO.swift in Sources */,
 				1075586D2A79199700A9B30A /* LoginViewController.swift in Sources */,
 				107558C22A7A856F00A9B30A /* HomeViewModel.swift in Sources */,
-				107558BA2A7A5D0B00A9B30A /* getTopAnimesRepositoryProtocol.swift in Sources */,
+				107558BA2A7A5D0B00A9B30A /* GetTopAnimesRepositoryProtocol.swift in Sources */,
 				107558AB2A7A349A00A9B30A /* TopAnimeDO.swift in Sources */,
-				107558F02A7D2BAE00A9B30A /* DetailVO.swift in Sources */,
 				107558A42A79B24C00A9B30A /* NetworkError.swift in Sources */,
 				1075589F2A79AA8D00A9B30A /* Title.swift in Sources */,
 				1075586F2A7930A300A9B30A /* KeyChainHelper.swift in Sources */,
@@ -822,19 +816,17 @@
 				107558B12A7A371500A9B30A /* DatumDO.swift in Sources */,
 				107558872A798C6C00A9B30A /* Items.swift in Sources */,
 				107558C82A7A85BD00A9B30A /* HomeCollectionViewCell.swift in Sources */,
-				107558B82A7A5CCB00A9B30A /* getTopAnimesRepositoryImpl.swift in Sources */,
+				107558B82A7A5CCB00A9B30A /* GetTopAnimesRepositoryImpl.swift in Sources */,
 				107558282A7911F000A9B30A /* SceneDelegate.swift in Sources */,
 				107558DB2A7BC17500A9B30A /* TopAnimeDataVO.swift in Sources */,
 				1075588F2A79A98800A9B30A /* Prop.swift in Sources */,
 				1075589C2A79AA1100A9B30A /* Image.swift in Sources */,
 				107558C02A7A856800A9B30A /* HomeViewController.swift in Sources */,
 				107558712A7930F200A9B30A /* UserDefaultHelper.swift in Sources */,
-				1075587C2A79878F00A9B30A /* VO.swift in Sources */,
+				107558F22A7FC6A900A9B30A /* DetailViewModel.swift in Sources */,
 				107558AF2A7A36B700A9B30A /* PaginationDO.swift in Sources */,
 				107558682A79196700A9B30A /* LoginViewModel.swift in Sources */,
-				107558782A79877D00A9B30A /* DTO.swift in Sources */,
 				107558992A79A9FE00A9B30A /* Demographic.swift in Sources */,
-				1075587A2A79878700A9B30A /* DO.swift in Sources */,
 				1075588D2A79A96A00A9B30A /* Aired.swift in Sources */,
 				107558932A79A9BD00A9B30A /* From.swift in Sources */,
 				1075588A2A798F5600A9B30A /* Datum.swift in Sources */,

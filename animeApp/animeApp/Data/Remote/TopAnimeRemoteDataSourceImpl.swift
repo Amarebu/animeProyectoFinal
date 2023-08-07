@@ -20,9 +20,7 @@ final class TopAnimeRemoteDataSourceImpl: TopAnimeRemoteDataSourceProtocol {
         let (data,_) = try await URLSession.shared.data(for: urlRequest)
         
         let topAnimes = try JSONDecoder().decode(TopAnimeDTO.self, from: data)    // si no quiero que se propague le pongo try?
-        topAnimes.data.forEach { topAnime in
-            print(topAnime.titleEnglish)
-        }
+
         return topAnimes
     }
   

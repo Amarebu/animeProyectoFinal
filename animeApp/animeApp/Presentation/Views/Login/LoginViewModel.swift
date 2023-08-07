@@ -11,10 +11,10 @@ final class LoginViewModel {
     
     // MARK: vars
     private weak var loginView: LoginViewController?
-    private var repositoryteData: getTopAnimesRepositoryProtocol
+    private var repositoryteData: GetTopAnimesRepositoryProtocol
     
     //MARK: Initializer
-    init(loginView: LoginViewController?, repositoryteData: getTopAnimesRepositoryProtocol) {
+    init(loginView: LoginViewController?, repositoryteData: GetTopAnimesRepositoryProtocol) {
         self.loginView = loginView
         self.repositoryteData = repositoryteData
     }
