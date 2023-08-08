@@ -25,6 +25,7 @@
                 <outlet property="titleLabel" destination="ogL-yV-ff6" id="FBJ-LX-G4w"/>
                 <outlet property="typeLabel" destination="CEs-jI-XQL" id="k2q-V0-0yh"/>
                 <outlet property="urlLabel" destination="8e2-Oo-INT" id="x2C-RA-Wn1"/>
+                <outlet property="verticalStackView" destination="QI6-in-TNH" id="2r6-Eb-KiO"/>
                 <outlet property="view" destination="iN0-l3-epB" id="mLt-3o-Szt"/>
                 <outlet property="yearLabel" destination="eRW-G8-puw" id="3qh-vw-Dzt"/>
             </connections>
@@ -142,6 +143,7 @@
                                 </label>
                             </subviews>
                             <constraints>
+                                <constraint firstItem="jBi-e0-Xgs" firstAttribute="leading" secondItem="QI6-in-TNH" secondAttribute="leading" constant="5" id="4TI-QQ-9GW"/>
                                 <constraint firstItem="kXM-bd-5gg" firstAttribute="centerX" secondItem="QI6-in-TNH" secondAttribute="centerX" id="ReM-v4-Lrh"/>
                             </constraints>
                         </stackView>

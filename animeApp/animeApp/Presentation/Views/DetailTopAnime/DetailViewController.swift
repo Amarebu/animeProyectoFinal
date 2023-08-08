@@ -21,6 +21,7 @@ final class DetailViewController: UIViewController {
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var animeImage: UIImageView!
     @IBOutlet private weak var horizontalAiringStack: UIStackView!
+    @IBOutlet weak var verticalStackView: UIStackView!
     @IBOutlet private weak var typeLabel: UILabel!
     @IBOutlet private weak var airingButton: UIButton!
     @IBOutlet private weak var airingLabel: UILabel!
@@ -52,8 +53,8 @@ final class DetailViewController: UIViewController {
         setViewModel()
         configureTitleLabel()
         configureDescriptionLabel()
-        self.navigationController?.navigationBar.isHidden = false
-        
+        configureButton()
+        verticalStackView.spacing = 5.0
     }
     
     private func setViewModel() {
@@ -62,6 +63,7 @@ final class DetailViewController: UIViewController {
         self.detailViewModel = DetailViewModel(repository: repository, viewDelegate: self)
     }
     
+
     private func configureTitleLabel() {
         titleLabel.font = UIFont.boldSystemFont(ofSize: 30.0)
         titleLabel.textAlignment = .center
@@ -69,6 +71,19 @@ final class DetailViewController: UIViewController {
         titleLabel.numberOfLines = 0
     }
     
+    private func configureButton() {
+        airingButton.tintColor = .clear
+        airingButton.layer.cornerRadius = 10
+        airingButton.layer.borderWidth = 10
+        airingButton.layer.borderColor = UIColor.black.cgColor
+        
+        airingLabel.layer.cornerRadius = 30
+        if airingLabel.text == "false" {
+            airingButton.layer.borderColor = UIColor.red.cgColor
+        } else {
+            airingButton.layer.borderColor = UIColor.green.cgColor
+        }
+    }
     private func configureDescriptionLabel() {
         let boldText = "Description: "
         let attrs = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 15)]

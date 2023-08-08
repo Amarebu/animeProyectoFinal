@@ -66,10 +66,6 @@ class LoginViewController: UIViewController {
     }
     
     func navigateToHome() {
-        /*let homeViewController = HomeViewController(nibName: "HomeView", bundle: nil)
-        let tabBarViewController = TabBarViewController()
-        navigationController?.pushViewController(tabBarViewController, animated: true)
-         */
         rootViewModel.activeView = .home
     }
     

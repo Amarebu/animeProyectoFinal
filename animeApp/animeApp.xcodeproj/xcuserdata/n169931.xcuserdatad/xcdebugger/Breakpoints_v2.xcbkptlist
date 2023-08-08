@@ -39,69 +39,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "77E7843A-23F5-408A-A6FE-A5465E00CFFE"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "animeApp/Presentation/Views/Login/LoginViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "navigateToHome()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "77E7843A-23F5-408A-A6FE-A5465E00CFFE - ccd6f5413bd5d09d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "animeApp.LoginViewController.navigateToHome() -&gt; ()"
-                  moduleName = "animeApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/n169931/Library/CloudStorage/OneDrive-SantanderOffice365/Escritorio/Formacion/proyectoFinal/animeProyectoFinal/animeApp/animeApp/Presentation/Views/Login/LoginViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "40">
-               </Location>
-               <Location
-                  uuid = "77E7843A-23F5-408A-A6FE-A5465E00CFFE - ccd6f5413bd5d09d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "animeApp.LoginViewController.navigateToHome() -&gt; ()"
-                  moduleName = "animeApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/n169931/Library/CloudStorage/OneDrive-SantanderOffice365/Escritorio/Formacion/proyectoFinal/animeProyectoFinal/animeApp/animeApp/Presentation/Views/Login/LoginViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "36">
-               </Location>
-               <Location
-                  uuid = "77E7843A-23F5-408A-A6FE-A5465E00CFFE - ccd6f5413bd5d09d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "animeApp.LoginViewController.navigateToHome() -&gt; ()"
-                  moduleName = "animeApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/n169931/Library/CloudStorage/OneDrive-SantanderOffice365/Escritorio/Formacion/proyectoFinal/animeProyectoFinal/animeApp/animeApp/Presentation/Views/Login/LoginViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "44">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "6501F8B8-2301-4069-8325-A568C6350D30"
             shouldBeEnabled = "No"
             ignoreCount = "0"
