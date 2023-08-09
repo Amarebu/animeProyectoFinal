@@ -15,9 +15,7 @@ enum Status:Equatable {
         default: return false
         }
     }
-    
-
-    case login, home, detail(model: TopAnimeDataVO)
+    case login, home, detail(model: TopAnimeDataVO), detailManga(model: TopMangaDataVO)
 }
 
 final class RootViewModel {

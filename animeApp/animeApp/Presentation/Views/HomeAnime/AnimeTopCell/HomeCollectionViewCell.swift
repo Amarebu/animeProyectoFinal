@@ -29,9 +29,9 @@ final class HomeCollectionViewCell: UICollectionViewCell {
     }
     
     private func configureTitle()  {
-        animeTitleLabel.font = .systemFont(ofSize: 12)
-        animeTitleLabel.numberOfLines = 2
-        animeTitleLabel.sizeToFit()
+        animeTitleLabel.font = .boldSystemFont(ofSize: 14)
+        animeTitleLabel.numberOfLines = 0
+        animeTitleLabel.textAlignment = .center
     }
     private func configureGenre()  {
         animeGenreLabel.font = .systemFont(ofSize: 12)

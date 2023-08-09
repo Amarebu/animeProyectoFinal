@@ -38,8 +38,6 @@ class LoginViewController: UIViewController {
     
     private func setupUserMail() {
         usermailTextField.placeholder = NSLocalizedString("usermailFormPlaceHolder", comment: "")
-        // passwordTextField.placeholder = NSLocalizedString("passwordFormPlaceHolder", comment: "")
-        // loginButton.setTitle(NSLocalizedString("loginButtonTitle", comment: ""), for: .normal)
     }
     
     private func setupPersonImage() {
@@ -49,7 +47,10 @@ class LoginViewController: UIViewController {
     private func setViewModel() {
         let remoteDataSource = TopAnimeRemoteDataSourceImpl()
         let repository = GetTopAnimesRepositoryImpl(topAnimeRemoteDataSource: remoteDataSource)
-        self.loginViewModel = LoginViewModel(loginView: self, repositoryteData: repository)
+        
+        let mangaRemoteDataSource = TopMangaRemoteDataSourceImpl()
+        let mangaRepository = GetTopMangaRepositoryImpl(topMangaRemoteDataSource: mangaRemoteDataSource)
+        self.loginViewModel = LoginViewModel(loginView: self, repositoryteData: repository, mangaRepositoryData: mangaRepository)
     }
     
     @IBAction func onLogin(_ sender: Any) {

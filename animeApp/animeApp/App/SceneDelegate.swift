@@ -31,6 +31,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                case .detail(model: let model):
                    let detailViewController = DetailViewController(rootViewModel: rootViewModel, model: model)
                    navigationController.pushViewController(detailViewController, animated: true)
+               case .detailManga(model: let model):
+                   let detailMangaViewController = DetailMangaViewController(rootViewModel: rootViewModel, model: model)
+                   navigationController.pushViewController(detailMangaViewController, animated: true)
                }
            }
            

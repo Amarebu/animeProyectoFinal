@@ -12,17 +12,12 @@ final class GetTopAnimesRepositoryImpl: GetTopAnimesRepositoryProtocol {
     // MARK: - Properties
     private let topAnimeRemoteDataSource: TopAnimeRemoteDataSourceProtocol
     
-    init(topAnimeRemoteDataSource: TopAnimeRemoteDataSourceImpl) {
+    init(topAnimeRemoteDataSource: TopAnimeRemoteDataSourceProtocol) {
         self.topAnimeRemoteDataSource = topAnimeRemoteDataSource
     }
     
     func getTopAnimes() async throws -> TopAnimeDO {
-        
         let topAnimes = try await topAnimeRemoteDataSource.getTopAnime()
-         
-        topAnimes.mapToDO().data.forEach{ j in
-            print(j.titleEnglish)
-        }
         return topAnimes.mapToDO()
     }
     
