@@ -24,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
            rootViewModel.onViewChange = {
                switch rootViewModel.activeView {
                case .login: // -> registro, olvidado tu contraseña... (push view controller)
-                   window.rootViewController = navigationController
+                   window.rootViewController = UINavigationController(rootViewController: HomeViewController(rootViewModel: rootViewModel))
                case .home:
                    let tabBarViewController = TabBarViewController(rootViewModel: rootViewModel)
                    navigationController.pushViewController(tabBarViewController, animated: true)
@@ -34,6 +34,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                case .detailManga(model: let model):
                    let detailMangaViewController = DetailMangaViewController(rootViewModel: rootViewModel, model: model)
                    navigationController.pushViewController(detailMangaViewController, animated: true)
+               case .logout:
+                   navigationController.popViewController(animated: true)
                }
            }
            

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		103BCD222A840E8000A3FB45 /* GetTopAnimesRepositoryImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103BCD212A840E8000A3FB45 /* GetTopAnimesRepositoryImplTests.swift */; };
 		103BCD242A84C34000A3FB45 /* MangaRemoteDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103BCD232A84C34000A3FB45 /* MangaRemoteDataSourceTests.swift */; };
+		103BCD272A84FBB600A3FB45 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 103BCD262A84FBB600A3FB45 /* SettingsViewController.xib */; };
+		103BCD292A84FBBE00A3FB45 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103BCD282A84FBBE00A3FB45 /* SettingsViewController.swift */; };
+		103BCD2B2A84FE5300A3FB45 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103BCD2A2A84FE5300A3FB45 /* SettingsViewModel.swift */; };
 		107558262A7911F000A9B30A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107558252A7911F000A9B30A /* AppDelegate.swift */; };
 		107558282A7911F000A9B30A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107558272A7911F000A9B30A /* SceneDelegate.swift */; };
 		1075582F2A7911F100A9B30A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1075582E2A7911F100A9B30A /* Assets.xcassets */; };
@@ -107,6 +110,9 @@
 /* Begin PBXFileReference section */
 		103BCD212A840E8000A3FB45 /* GetTopAnimesRepositoryImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTopAnimesRepositoryImplTests.swift; sourceTree = "<group>"; };
 		103BCD232A84C34000A3FB45 /* MangaRemoteDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaRemoteDataSourceTests.swift; sourceTree = "<group>"; };
+		103BCD262A84FBB600A3FB45 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		103BCD282A84FBBE00A3FB45 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		103BCD2A2A84FE5300A3FB45 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		107558222A7911F000A9B30A /* animeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = animeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		107558252A7911F000A9B30A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		107558272A7911F000A9B30A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -222,6 +228,16 @@
 				103BCD212A840E8000A3FB45 /* GetTopAnimesRepositoryImplTests.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		103BCD252A84FB8F00A3FB45 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				103BCD262A84FBB600A3FB45 /* SettingsViewController.xib */,
+				103BCD282A84FBBE00A3FB45 /* SettingsViewController.swift */,
+				103BCD2A2A84FE5300A3FB45 /* SettingsViewModel.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		107558192A7911F000A9B30A = {
@@ -612,6 +628,7 @@
 		107558A92A7A343000A9B30A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				103BCD252A84FB8F00A3FB45 /* Settings */,
 				1075593D2A838A2600A9B30A /* DetailManga */,
 				107558662A79194400A9B30A /* Login */,
 				107558F32A80D4B000A9B30A /* RootView */,
@@ -996,6 +1013,7 @@
 			files = (
 				107558322A7911F100A9B30A /* LaunchScreen.storyboard in Resources */,
 				107558D12A7AB6E300A9B30A /* Localizable.strings in Resources */,
+				103BCD272A84FBB600A3FB45 /* SettingsViewController.xib in Resources */,
 				107558EB2A7D248600A9B30A /* DetailViewController.xib in Resources */,
 				107558C42A7A858300A9B30A /* HomeView.xib in Resources */,
 				107558E32A7C596F00A9B30A /* HomeCollectionViewCell.xib in Resources */,
@@ -1051,6 +1069,7 @@
 				107558E62A7D12EC00A9B30A /* TabBarViewController.swift in Sources */,
 				107558262A7911F000A9B30A /* AppDelegate.swift in Sources */,
 				107558A22A79AAA100A9B30A /* Trailer.swift in Sources */,
+				103BCD292A84FBBE00A3FB45 /* SettingsViewController.swift in Sources */,
 				107558B12A7A371500A9B30A /* DatumDO.swift in Sources */,
 				107558872A798C6C00A9B30A /* Items.swift in Sources */,
 				107558C82A7A85BD00A9B30A /* HomeCollectionViewCell.swift in Sources */,
@@ -1065,6 +1084,7 @@
 				1075588F2A79A98800A9B30A /* Prop.swift in Sources */,
 				1075589C2A79AA1100A9B30A /* Image.swift in Sources */,
 				107558C02A7A856800A9B30A /* HomeViewController.swift in Sources */,
+				103BCD2B2A84FE5300A3FB45 /* SettingsViewModel.swift in Sources */,
 				1075591A2A83783700A9B30A /* TopMangaRemoteDataSourceProtocol.swift in Sources */,
 				107558712A7930F200A9B30A /* UserDefaultHelper.swift in Sources */,
 				107558F22A7FC6A900A9B30A /* DetailViewModel.swift in Sources */,

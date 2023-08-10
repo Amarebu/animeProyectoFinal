@@ -19,6 +19,8 @@ específico
 de un manga específico
 - TabBar: View principal, en ella recoge tanto TopAnimes como TopMangas, 
 abierta a posibles cambios
+- Settings View: Clase en la que encontramos diferentes ajustes de la 
+aplicación.
 
 Llamadas a APIs usada: 
 - GET https://api.jikan.moe/v4/top/anime

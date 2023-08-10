@@ -31,17 +31,23 @@ final class TabBarViewController: UITabBarController {
         let mangaViewController = HomeMangaViewController(rootViewModel: rootViewModel)
         mangaViewController.tabBarItem = UITabBarItem(title: "Top Mangas", image: UIImage(systemName: "suit.club.fill"), tag: 1)
 
+        // Settings
+        let settingsViewController = SettingsViewController()
+            settingsViewController.tabBarItem = UITabBarItem(title: "Settings", image: UIImage(systemName: "gear"), tag: 1)
+
+        
         // Asignar los viewcontrollers al tabBar, el orden de los view controllers
         self.title = "MyAnimeList"
         navigationItem.hidesBackButton = true
-        self.viewControllers = [homeViewController,mangaViewController]
-        // setLogOutButton()
+        self.viewControllers = [homeViewController,mangaViewController,settingsViewController]
+        setLogOutButton()
         
+    }
+    private func setLogOutButton() {
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logout))
     }
     
     @objc private func logout() {
-        NotificationCenter.default.post(name: .deleteToken, object:  nil, userInfo: nil)
-        navigationController?.popViewController(animated: true)
-        
+        rootViewModel.activeView = .logout
     }
 }

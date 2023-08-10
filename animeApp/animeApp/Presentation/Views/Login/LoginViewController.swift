@@ -67,6 +67,8 @@ class LoginViewController: UIViewController {
     }
     
     func navigateToHome() {
+        usermailTextField.text = ""
+        passwordTextField.text = ""
         rootViewModel.activeView = .home
     }
     
