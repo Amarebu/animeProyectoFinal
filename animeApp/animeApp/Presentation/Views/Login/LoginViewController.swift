@@ -13,6 +13,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordImage: UIImageView!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var nameAppLabel: UILabel!
     
     // MARK: - ViewModel
     var loginViewModel: LoginViewModel?
@@ -34,8 +35,15 @@ class LoginViewController: UIViewController {
         setViewModel()
         setupUserMail()
         setupPersonImage()
+        configureNameApp()
     }
     
+    private func configureNameApp() {
+        nameAppLabel.text = "Anime APP"
+        nameAppLabel.font = .boldSystemFont(ofSize: 40)
+        nameAppLabel.textAlignment = .center
+        nameAppLabel.textColor = UIColor(named: "lightPink") ?? .black
+    }
     private func setupUserMail() {
         usermailTextField.placeholder = NSLocalizedString("usermailFormPlaceHolder", comment: "")
     }

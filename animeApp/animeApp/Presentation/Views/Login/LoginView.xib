@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="animeApp" customModuleProvider="target">
             <connections>
                 <outlet property="loginButton" destination="IQy-CB-edD" id="Qz7-Hl-Urw"/>
+                <outlet property="nameAppLabel" destination="XWZ-a1-9kC" id="y6T-s7-1ot"/>
                 <outlet property="passwordImage" destination="JUj-NN-z0p" id="Ju4-uJ-p4F"/>
                 <outlet property="passwordTextField" destination="suO-wB-YZj" id="1gq-iq-jKM"/>
                 <outlet property="personImage" destination="KeX-eh-PVO" id="fyV-rD-dvT"/>
@@ -22,6 +23,12 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWZ-a1-9kC">
+                    <rect key="frame" x="0.0" y="214" width="393" height="88"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="70d-Ma-Bp0" userLabel="horizontalUserStackView">
                     <rect key="frame" x="35.666666666666657" y="302" width="322" height="40"/>
                     <subviews>
@@ -88,8 +95,13 @@
             <color key="backgroundColor" red="0.86057475728198207" green="0.75633631915507882" blue="0.86078912019729614" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <color key="tintColor" red="0.78034855960000005" green="0.40574833179999997" blue="0.75466051789999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
+                <constraint firstItem="70d-Ma-Bp0" firstAttribute="top" secondItem="XWZ-a1-9kC" secondAttribute="bottom" id="5H2-Wf-7gs"/>
+                <constraint firstItem="XWZ-a1-9kC" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="155" id="6oz-cx-LxI"/>
                 <constraint firstItem="70d-Ma-Bp0" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="243" id="7lz-l1-2br"/>
+                <constraint firstItem="XWZ-a1-9kC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="OkC-z6-gZJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="XWZ-a1-9kC" secondAttribute="trailing" id="Zv2-2J-AAP"/>
                 <constraint firstItem="CgB-ry-V73" firstAttribute="centerX" secondItem="70d-Ma-Bp0" secondAttribute="centerX" id="b3A-LR-s5B"/>
+                <constraint firstItem="70d-Ma-Bp0" firstAttribute="top" secondItem="XWZ-a1-9kC" secondAttribute="bottom" id="dqH-8u-OZh"/>
                 <constraint firstItem="CgB-ry-V73" firstAttribute="top" secondItem="70d-Ma-Bp0" secondAttribute="bottom" constant="32" id="e9Z-A2-PiV"/>
                 <constraint firstItem="IQy-CB-edD" firstAttribute="top" secondItem="CgB-ry-V73" secondAttribute="bottom" constant="60" id="o0m-vb-Ldw"/>
                 <constraint firstItem="70d-Ma-Bp0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="sTS-z3-KGM"/>

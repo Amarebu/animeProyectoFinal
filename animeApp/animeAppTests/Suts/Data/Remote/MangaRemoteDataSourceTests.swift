@@ -111,8 +111,6 @@ final class MangaRemoteDataSourceTests: XCTestCase {
         
         // THEN
         XCTAssertNotNil(mangas)
-        //XCTAssertEqual(animes.data.first?.images?["test"]?.imageURL, mockImageURL)
-        //XCTAssertEqual(animes.first?.name, "name")
     }
 
 

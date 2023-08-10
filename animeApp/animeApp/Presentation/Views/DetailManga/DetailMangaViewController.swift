@@ -145,7 +145,7 @@ final class DetailMangaViewController: UIViewController {
     }
     
     private func configureUrlButton() {
-        urlButton.setTitle("Anime link", for: .normal)
+        urlButton.setTitle("Manga link", for: .normal)
         urlButton.contentHorizontalAlignment = .left
     }
     

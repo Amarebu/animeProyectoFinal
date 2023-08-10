@@ -114,7 +114,7 @@ final class AnimeRemoteDataSourceTests: XCTestCase {
         
         // WHEN
         guard let animes = try? await sut?.getTopAnime() else {
-            XCTFail("Animes must contain an animes")
+            XCTFail("Animes must contains an animes")
             return
         }
         
