@@ -24,6 +24,7 @@
                 <outlet property="seasonLabel" destination="T3r-X7-zn3" id="bD9-fG-xu5"/>
                 <outlet property="titleLabel" destination="ogL-yV-ff6" id="FBJ-LX-G4w"/>
                 <outlet property="typeLabel" destination="CEs-jI-XQL" id="k2q-V0-0yh"/>
+                <outlet property="urlButton" destination="7an-iY-vdR" id="9CW-xB-1Fk"/>
                 <outlet property="urlLabel" destination="8e2-Oo-INT" id="x2C-RA-Wn1"/>
                 <outlet property="verticalStackView" destination="QI6-in-TNH" id="2r6-Eb-KiO"/>
                 <outlet property="view" destination="iN0-l3-epB" id="mLt-3o-Szt"/>
@@ -39,7 +40,7 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="793"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QI6-in-TNH" userLabel="VerticalStackView">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="441.66666666666669"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="455.66666666666669"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogL-yV-ff6" userLabel="titleLabel">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="20.333333333333332"/>
@@ -153,12 +154,25 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8e2-Oo-INT" userLabel="urlLabel">
-                                    <rect key="frame" x="0.0" y="421.33333333333331" width="393" height="20.333333333333314"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d53-CH-ogF">
+                                    <rect key="frame" x="0.0" y="421.33333333333331" width="393" height="34.333333333333314"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8e2-Oo-INT" userLabel="urlLabel">
+                                            <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="34.333333333333336"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7an-iY-vdR">
+                                            <rect key="frame" x="41.333333333333343" y="0.0" width="351.66666666666663" height="34.333333333333336"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                            <connections>
+                                                <action selector="onPressURLButton:" destination="-1" eventType="touchUpInside" id="U0N-e8-mbx"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
                             </subviews>
                             <constraints>
                                 <constraint firstItem="kXM-bd-5gg" firstAttribute="centerX" secondItem="QI6-in-TNH" secondAttribute="centerX" id="ReM-v4-Lrh"/>

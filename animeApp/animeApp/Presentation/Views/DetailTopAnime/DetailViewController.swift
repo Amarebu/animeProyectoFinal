@@ -8,13 +8,16 @@
 import UIKit
 
 protocol DetailViewControllerProtocol: AnyObject {
-    
+    func searchLink(url: URL)
+    func showAlert(alert: String)
 }
 
 final class DetailViewController: UIViewController {
     
+    //MARK: Properties
     var detailViewModel: DetailViewModelProtocol?
     var model: TopAnimeDataVO = TopAnimeDataVO(malID: nil, image: nil, year: nil, titleEnglish: nil, url: nil, episodes: nil, status: nil, airing: nil, duration: nil, score: nil, synopsis: nil, season: nil, genre: nil)
+    var urlString: String = " "
     var rootViewModel: RootViewModel
     
     @IBOutlet private var principalView: UIView!
@@ -33,9 +36,17 @@ final class DetailViewController: UIViewController {
     @IBOutlet private weak var yearLabel: UILabel!
     @IBOutlet private weak var descriptionLabel: UILabel!
     @IBOutlet private weak var scrollView: UIScrollView!
+    @IBOutlet weak var urlButton: UIButton!
     @IBOutlet private weak var urlLabel: UILabel!
     
-
+    @IBAction func onPressURLButton(_ sender: Any) {
+        if let url = URL(string:urlString) {
+            detailViewModel?.onPressUrl(isValid: true, urlShared: url)
+        } else {
+            detailViewModel?.onPressUrl(isValid: false, urlShared: nil)
+        }
+    }
+    
     // MARK: - Lifecycle
     init(rootViewModel: RootViewModel, model: TopAnimeDataVO) {
         self.model = model
@@ -60,6 +71,8 @@ final class DetailViewController: UIViewController {
         generalConfiguration(label: seasonLabel, description: " Season: ")
         generalConfiguration(label: yearLabel, description: " Year: ")
         generalConfiguration(label: typeLabel, description: " Genre: ")
+        configureUrlLabel()
+        configureUrlButton()
         verticalStackView.spacing = 5.0
     }
     
@@ -115,6 +128,15 @@ final class DetailViewController: UIViewController {
         }
     }
     
+    private func configureUrlLabel() {
+        urlLabel.text = "For more information:"
+        urlLabel.font = UIFont.boldSystemFont(ofSize: 15)
+    }
+    
+    private func configureUrlButton() {
+        urlButton.setTitle("Anime link", for: .normal)
+        urlButton.contentHorizontalAlignment = .left
+    }
     private func generalConfiguration(label: UILabel, description: String) {
         let boldText = description
         let attrs = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 15)]
@@ -149,7 +171,7 @@ final class DetailViewController: UIViewController {
         seasonLabel.text = model.season
         yearLabel.text = "\(String(model.year ?? 0))"
         descriptionLabel.text = model.synopsis
-        urlLabel.text = model.url
+        urlString = model.url ?? " "
         
     }
 }
@@ -157,4 +179,17 @@ final class DetailViewController: UIViewController {
 // MARK: - DetailViewControllerProtocol extension
 extension DetailViewController: DetailViewControllerProtocol {
     
+    func searchLink(url: URL) {
+        UIApplication.shared.open(url)
+    }
+    
+    func showAlert(alert: String) {
+        let controller = UIAlertController(title: "URL not found", message: alert, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default)
+        controller.addAction(action)
+        DispatchQueue.main.async {
+          self.present(controller, animated: true, completion: nil)
+        }
+      }
+
 }

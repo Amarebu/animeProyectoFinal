@@ -8,7 +8,7 @@
 import Foundation
 
 protocol DetailViewModelProtocol: AnyObject {
-    
+    func onPressUrl(isValid: Bool, urlShared: URL?)
 }
 
 class DetailViewModel {
@@ -26,5 +26,15 @@ class DetailViewModel {
 
 // MARK: - DetailViewModelProtocol extension
 extension DetailViewModel: DetailViewModelProtocol {
+
+    func onPressUrl(isValid: Bool, urlShared: URL?) {
+        if isValid {
+            guard let urlShared else { return }
+            viewDelegate?.searchLink(url: urlShared)
+        } else {
+            viewDelegate?.showAlert(alert: "At this moment the url isn't avaible")
+        }
+    }
+    
     
 }

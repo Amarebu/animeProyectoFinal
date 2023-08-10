@@ -59,6 +59,7 @@ final class LoginViewModelTests: XCTestCase {
         let data = KeyChainHelper.standar.read(account: user) ?? Data()
         stringData = String(data: data, encoding: .utf8) ?? "UserNoEncontrado"
         XCTAssertEqual(stringData, password, "ERROR: The user not is in the KeyChain")
+        KeyChainHelper.standar.delete(account: user)
     }
 
 }
