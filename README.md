@@ -22,13 +22,15 @@ abierta a posibles cambios
 
 Llamadas a APIs usada: 
 - GET https://api.jikan.moe/v4/top/anime
-- GET httop://api.jikan.moe/v4/top/manga
+- GET https://api.jikan.moe/v4/top/manga
 
 Funcionalidades testadas:
 - Login:
 	- func onLogin: Se testaron tanto los casos de error como los 
 casos en los que sale correcto.
 - RemoteDataSourceAnime:
-	- Testado la llamada con Async await
+	- Testada la llamada con Async await
+-RemoteDataSourceManga:
+	- Testada la llamada con Async await
 - AnimeRepository:
 	- Testado el mapeo de dato DTO a DO

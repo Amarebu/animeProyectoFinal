@@ -24,17 +24,17 @@ final class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         // homeView
         let homeViewController = HomeViewController(rootViewModel: rootViewModel)
-        homeViewController.tabBarItem = UITabBarItem(title: "Top Animes", image: UIImage(named: "Top Animes"), tag: 0)
+        homeViewController.tabBarItem = UITabBarItem(title: "Top Animes", image: UIImage(systemName: "suit.spade.fill"), tag: 0)
         
         // homeMangaView
         
         let mangaViewController = HomeMangaViewController(rootViewModel: rootViewModel)
-        mangaViewController.tabBarItem = UITabBarItem(title: "Top Mangas", image: UIImage(named: "Settings"), tag: 1)
+        mangaViewController.tabBarItem = UITabBarItem(title: "Top Mangas", image: UIImage(systemName: "suit.club.fill"), tag: 1)
 
         // Asignar los viewcontrollers al tabBar, el orden de los view controllers
         self.title = "MyAnimeList"
         navigationItem.hidesBackButton = true
-        self.viewControllers = [mangaViewController,homeViewController]
+        self.viewControllers = [homeViewController,mangaViewController]
         // setLogOutButton()
         
     }

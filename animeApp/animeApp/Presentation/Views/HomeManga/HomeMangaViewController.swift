@@ -66,7 +66,7 @@ final class HomeMangaViewController : UIViewController, ObservableObject {
     }
     
     private func getItemSize() -> CGSize {
-        return CGSize(width: 150, height: 280)
+        return CGSize(width: 160, height: 280)
     }
     
 }
@@ -106,10 +106,10 @@ extension HomeMangaViewController: UICollectionViewDelegate, UICollectionViewDat
         let color = UIColor.black.cgColor
         
         let shapeLayer:CAShapeLayer = CAShapeLayer()
-        let shapeRect = CGRect(x: 0, y: 0, width: 150, height: 280)
+        let shapeRect = CGRect(x: 0, y: 0, width: 160, height: 280)
         
         shapeLayer.bounds = shapeRect
-        shapeLayer.position = CGPoint(x: 150/2, y: 280/2)
+        shapeLayer.position = CGPoint(x: 160/2, y: 280/2)
         shapeLayer.fillColor = UIColor.clear.cgColor
         shapeLayer.strokeColor = color
         shapeLayer.lineWidth = 2

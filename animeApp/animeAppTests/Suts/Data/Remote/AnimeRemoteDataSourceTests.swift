@@ -9,7 +9,7 @@ import XCTest
 import Combine
 @testable import animeApp
 
-final class RemoteDataSourceTests: XCTestCase {
+final class AnimeRemoteDataSourceTests: XCTestCase {
     
     //MARK: Properties
     var sut: TopAnimeRemoteDataSourceProtocol?

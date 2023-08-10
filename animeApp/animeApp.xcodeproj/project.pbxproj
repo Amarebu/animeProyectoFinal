@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		103BCD222A840E8000A3FB45 /* GetTopAnimesRepositoryImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103BCD212A840E8000A3FB45 /* GetTopAnimesRepositoryImplTests.swift */; };
+		103BCD242A84C34000A3FB45 /* MangaRemoteDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103BCD232A84C34000A3FB45 /* MangaRemoteDataSourceTests.swift */; };
 		107558262A7911F000A9B30A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107558252A7911F000A9B30A /* AppDelegate.swift */; };
 		107558282A7911F000A9B30A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107558272A7911F000A9B30A /* SceneDelegate.swift */; };
 		1075582F2A7911F100A9B30A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1075582E2A7911F100A9B30A /* Assets.xcassets */; };
@@ -61,7 +62,7 @@
 		107559042A8245AB00A9B30A /* URLSessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107559032A8245AB00A9B30A /* URLSessionExtension.swift */; };
 		107559062A82473500A9B30A /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107559052A82473500A9B30A /* URLProtocolMock.swift */; };
 		107559082A82478400A9B30A /* NetworkFetchingMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107559072A82478400A9B30A /* NetworkFetchingMock.swift */; };
-		1075590A2A82480200A9B30A /* RemoteDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107559092A82480200A9B30A /* RemoteDataSourceTests.swift */; };
+		1075590A2A82480200A9B30A /* AnimeRemoteDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107559092A82480200A9B30A /* AnimeRemoteDataSourceTests.swift */; };
 		1075590E2A836C1300A9B30A /* HomeMangaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1075590D2A836C1300A9B30A /* HomeMangaViewController.swift */; };
 		107559102A836C1F00A9B30A /* HomeMangaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1075590F2A836C1F00A9B30A /* HomeMangaViewController.xib */; };
 		107559122A836C2C00A9B30A /* HomeMangaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107559112A836C2C00A9B30A /* HomeMangaViewModel.swift */; };
@@ -105,6 +106,7 @@
 
 /* Begin PBXFileReference section */
 		103BCD212A840E8000A3FB45 /* GetTopAnimesRepositoryImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTopAnimesRepositoryImplTests.swift; sourceTree = "<group>"; };
+		103BCD232A84C34000A3FB45 /* MangaRemoteDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaRemoteDataSourceTests.swift; sourceTree = "<group>"; };
 		107558222A7911F000A9B30A /* animeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = animeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		107558252A7911F000A9B30A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		107558272A7911F000A9B30A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,7 +166,7 @@
 		107559032A8245AB00A9B30A /* URLSessionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionExtension.swift; sourceTree = "<group>"; };
 		107559052A82473500A9B30A /* URLProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolMock.swift; sourceTree = "<group>"; };
 		107559072A82478400A9B30A /* NetworkFetchingMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetchingMock.swift; sourceTree = "<group>"; };
-		107559092A82480200A9B30A /* RemoteDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSourceTests.swift; sourceTree = "<group>"; };
+		107559092A82480200A9B30A /* AnimeRemoteDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeRemoteDataSourceTests.swift; sourceTree = "<group>"; };
 		1075590D2A836C1300A9B30A /* HomeMangaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMangaViewController.swift; sourceTree = "<group>"; };
 		1075590F2A836C1F00A9B30A /* HomeMangaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeMangaViewController.xib; sourceTree = "<group>"; };
 		107559112A836C2C00A9B30A /* HomeMangaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMangaViewModel.swift; sourceTree = "<group>"; };
@@ -337,6 +339,7 @@
 			isa = PBXGroup;
 			children = (
 				107558FC2A82252700A9B30A /* Remote */,
+				103BCD202A840C9700A3FB45 /* Repository */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -344,7 +347,6 @@
 		1075585C2A79170D00A9B30A /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				103BCD202A840C9700A3FB45 /* Repository */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -756,7 +758,8 @@
 		107558FC2A82252700A9B30A /* Remote */ = {
 			isa = PBXGroup;
 			children = (
-				107559092A82480200A9B30A /* RemoteDataSourceTests.swift */,
+				107559092A82480200A9B30A /* AnimeRemoteDataSourceTests.swift */,
+				103BCD232A84C34000A3FB45 /* MangaRemoteDataSourceTests.swift */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -1093,7 +1096,8 @@
 			files = (
 				107558FB2A8223CA00A9B30A /* LoginViewModelTests.swift in Sources */,
 				1075583D2A7911F100A9B30A /* animeAppTests.swift in Sources */,
-				1075590A2A82480200A9B30A /* RemoteDataSourceTests.swift in Sources */,
+				1075590A2A82480200A9B30A /* AnimeRemoteDataSourceTests.swift in Sources */,
+				103BCD242A84C34000A3FB45 /* MangaRemoteDataSourceTests.swift in Sources */,
 				107559082A82478400A9B30A /* NetworkFetchingMock.swift in Sources */,
 				107559062A82473500A9B30A /* URLProtocolMock.swift in Sources */,
 				103BCD222A840E8000A3FB45 /* GetTopAnimesRepositoryImplTests.swift in Sources */,

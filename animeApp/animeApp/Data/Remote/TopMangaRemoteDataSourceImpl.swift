@@ -23,12 +23,8 @@ final class TopMangaRemoteDataSourceImpl: TopMangaRemoteDataSourceProtocol {
             throw NetworkError.malformedURL // Para seguir el ejemplo del playground
         }
         // Obtener la data de la llamada
-        //let (data,_) = try await URLSession.shared.data(for: urlRequest)
         let (data, _) = try await session.data(url: urlRequest)
         let topMangas = try JSONDecoder().decode(TopMangaDTO.self, from: data)
-        topMangas.data.forEach { data in
-            print(data.title)
-        }
         
         return topMangas
     }
