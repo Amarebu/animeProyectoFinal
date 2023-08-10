@@ -8,7 +8,7 @@
 import Foundation
 
 protocol DetailMangaViewModelProtocol: AnyObject {
-    
+    func onPressUrl(isValid: Bool, urlShared: URL?)
 }
 
 class DetailMangaViewModel {
@@ -27,5 +27,12 @@ class DetailMangaViewModel {
 
 // MARK: - DetailViewModelProtocol extension
 extension DetailMangaViewModel: DetailMangaViewModelProtocol {
-    
+    func onPressUrl(isValid: Bool, urlShared: URL?) {
+        if isValid {
+            guard let urlShared else { return }
+            viewDelegate?.searchLink(url: urlShared)
+        } else {
+            viewDelegate?.showAlert(alert: "At this moment the url isn't avaible")
+        }
+    }
 }

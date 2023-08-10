@@ -22,6 +22,7 @@
                 <outlet property="scrollView" destination="cr7-hI-MNc" id="gGc-vw-f97"/>
                 <outlet property="titleLabel" destination="sEc-5s-9pD" id="anq-hf-4Uy"/>
                 <outlet property="typeLabel" destination="6a0-6C-arO" id="GGT-ke-n9x"/>
+                <outlet property="urlButton" destination="0eZ-xc-iqA" id="7OB-yl-cpx"/>
                 <outlet property="urlLabel" destination="hlE-Oi-zd2" id="s77-Bk-haq"/>
                 <outlet property="verticalStackView" destination="uFA-tF-1hN" id="js9-xT-7Ds"/>
                 <outlet property="view" destination="iN0-l3-epB" id="wJI-rF-bn3"/>
@@ -36,7 +37,7 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uFA-tF-1hN">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="435.33333333333331"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="449.33333333333331"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEc-5s-9pD">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="20.333333333333332"/>
@@ -132,12 +133,25 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlE-Oi-zd2">
-                                    <rect key="frame" x="0.0" y="415" width="393" height="20.333333333333314"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rzX-SA-WG8">
+                                    <rect key="frame" x="0.0" y="415" width="393" height="34.333333333333314"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlE-Oi-zd2">
+                                            <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="34.333333333333336"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0eZ-xc-iqA">
+                                            <rect key="frame" x="41.333333333333343" y="0.0" width="351.66666666666663" height="34.333333333333336"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                            <connections>
+                                                <action selector="onPressButton:" destination="-1" eventType="touchUpInside" id="3Ia-nj-rxI"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
                             </subviews>
                         </stackView>
                     </subviews>

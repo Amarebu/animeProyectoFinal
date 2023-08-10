@@ -8,14 +8,17 @@
 import UIKit
 
 protocol DetailMangaViewControllerProtocol: AnyObject {
-    
+    func searchLink(url: URL)
+    func showAlert(alert: String)
 }
 
 final class DetailMangaViewController: UIViewController {
     
+    //MARK: Properties
     var detailViewModel: DetailMangaViewModelProtocol?
     var model: TopMangaDataVO = TopMangaDataVO(malID: nil, url: nil, images: nil, titleEnglish: nil, chapters: nil, status: nil, score: nil, synopsis: nil, genres: nil)
     var rootViewModel: RootViewModel
+    var urlString: String = " "
     
     @IBOutlet private var principalView: UIView!
     @IBOutlet private weak var titleLabel: UILabel!
@@ -31,6 +34,15 @@ final class DetailMangaViewController: UIViewController {
     @IBOutlet private weak var descriptionLabel: UILabel!
     @IBOutlet private weak var scrollView: UIScrollView!
     @IBOutlet private weak var urlLabel: UILabel!
+    @IBOutlet weak var urlButton: UIButton!
+    
+    @IBAction func onPressButton(_ sender: Any) {
+        if let url = URL(string:urlString) {
+            detailViewModel?.onPressUrl(isValid: true, urlShared: url)
+        } else {
+            detailViewModel?.onPressUrl(isValid: false, urlShared: nil)
+        }
+    }
     
     
     // MARK: - Lifecycle
@@ -55,6 +67,8 @@ final class DetailMangaViewController: UIViewController {
         generalConfiguration(label: descriptionLabel, description: " Description: ")
         generalConfiguration(label: scoreLabel, description: " Score: ")
         generalConfiguration(label: typeLabel, description: " Genre: ")
+        configureUrlLabel()
+        configureUrlButton()
         verticalStackView.spacing = 5.0
     }
     
@@ -125,6 +139,16 @@ final class DetailMangaViewController: UIViewController {
         label.numberOfLines = 0
     }
     
+    private func configureUrlLabel() {
+        urlLabel.text = "For more information:"
+        urlLabel.font = UIFont.boldSystemFont(ofSize: 15)
+    }
+    
+    private func configureUrlButton() {
+        urlButton.setTitle("Anime link", for: .normal)
+        urlButton.contentHorizontalAlignment = .left
+    }
+    
     func setUpDetail(model: TopMangaDataVO) {
         
         titleLabel.text = model.titleEnglish
@@ -147,12 +171,23 @@ final class DetailMangaViewController: UIViewController {
         typeLabel.text = model.genres?.first?.name
         scoreLabel.text = String(model.score ?? 1.0)
         descriptionLabel.text = model.synopsis
-        urlLabel.text = model.url
+        urlString = model.url ?? " "
         
     }
 }
 
 // MARK: - DetailViewControllerProtocol extension
 extension DetailMangaViewController: DetailMangaViewControllerProtocol {
+    func searchLink(url: URL) {
+        UIApplication.shared.open(url)
+    }
     
+    func showAlert(alert: String) {
+        let controller = UIAlertController(title: "URL not found", message: alert, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default)
+        controller.addAction(action)
+        DispatchQueue.main.async {
+          self.present(controller, animated: true, completion: nil)
+        }
+      }
 }
