@@ -36,5 +36,5 @@ casos en los que sale correcto.
 	- Testada la llamada con Async await
 - AnimeRepository:
 	- Testado el mapeo de dato DTO a DO
--MangaRepository:
+- MangaRepository:
 	- Testado el mapeto de dato DTO a DO
